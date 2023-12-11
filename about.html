@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+    <title>Document</title>
+</head>
+<body>
+    <button>click</button>
+<script >
+        
+
+        // let a = 28 ;
+         //let b = 2;
+        // let c = 1999;
+    
+        // console.log(typeof a); 
+
+
+
+        //let data = '28.2.1999';
+        //onsole.log( data);
+        
+         
+
+
+        //let name = prompt ('Name?') ;
+        //let address = prompt ('Address?') ; 
+        //let phone = prompt ('Phone?') ;
+ 
+        //console.log ('меня зовут {Юнус},я живу в селе {Автуры} , мой номер {+7920-355-83-37}') ; 
+
+
+
+
+        //let $ = 100 
+        //let rub = 90  
+ 
+        //console.log ($ / rub );
+
+        //let num  = prompt ('ведите число'); 
+          //if ( num % 2 == 0) { 
+           //   alert ('четное') 
+         // } else { 
+           // alert('не четное') 
+        //  //}
+        // function calcSumm(numOne, numTwo, more, less) { 
+        //  let numSumm = numOne + numTwo; 
+ 
+        //  if (numSumm > 10) { 
+        //    more(); 
+        //  }else{ 
+        //    less(); 
+ 
+        //  } 
+        //} 
+ 
+
+
+        //function showMoreMessage() { 
+        //  console.log ('констант больше 10') 
+        //} 
+        //function showLessMessage() { 
+        //  console.log ('не больше 10') 
+        //} 
+        //  
+        //calcSumm(11,9, showMoreMessage,  showLessMessage)
+       // let man = { 
+        //   name: "Юсуп", 
+        //   surname: "Дудаев", 
+        //   age: "18", 
+        //   height: "187", 
+        //   login: "dudaev123", 
+        //   passwoord: "argun123", 
+        //   check: "120000$" 
+        // }; 
+ 
+
+
+        // let infoAddress = { 
+        //   address: "Автуры" 
+        // } 
+ 
+        // console.log (man); 
+        // console.log (infoAddress); 
+         
+ 
+        // const username=prompt("Ведите логин:"); 
+ 
+        //  if(username=="admin"){ 
+        //  const password=prompt("ведите пароль:"); 
+        //  if(password=="12345"){ 
+        //  alert("Добро пожаловать!"); 
+        //  } 
+        //  else{ 
+        //  alert("веденный вами логин или пароль не верный!"); 
+        //  } 
+        //  } 
+        //  else{ 
+        //  alert("Доступ запрещён!!"); 
+        //  } 
+ 
+        // let i = 0 ; 
+        // while ( i < 10) { 
+        //   console.log (i); 
+           
+        //   i++; 
+        // }
+      
+
+        // let a = ['lorem', 123, true, 'ipsum']; 
+ 
+        //   function Gfg() { 
+        //     let f=a[0]; 
+             
+        //     let l=a[ a.length - 1 ]; 
+             
+        //     console.log( f); 
+        //     console.log(l); 
+ 
+        //   } 
+        //   Gfg(); 
+           
+        // console.log(a.length); 
+         
+        // let em = [ 
+        //   {name: 'Ali'}, 
+        //   {name: 'Malik'}, 
+        //   {name: 'Alixan'}, 
+        //   {name: 'Yunus'}, 
+        //   {name: 'Yusup'}, 
+        //  ]; 
+       
+        // //  em.unshift({name:'Salax' }) 
+        // //  em.unshift({name:'Muslim' }) 
+        // //  em.unshift({name:'Mansur' }) 
+ 
+        // //  console.log(em[0]) 
+        // //  console.log(em[1]) 
+        // //  console.log(em[2]) 
+         
+        // delete em [0]; 
+        // delete em [3]; 
+        // delete em [4]; 
+         
+        // // console.log(em) 
+ 
+        // let number = [1, 3, 5, 7, 9]; 
+ 
+        // //   for (let i = 0;  i < number.length; i++) 
+        // //  if (number[i] % 2 !== 0) 
+        // //   number[i] *= 2; 
+ 
+        //   number[2]=40 
+        //   number[3]=60 
+ 
+ 
+        //   console.log(number);
+
+
+            //practic2
+
+
+        const cities = [
+             {name: 'москва', population:12506468},
+             {name: 'Санкт-Петербург', population: 5351935},
+             {name: 'Новосибирск', population: 1612833}, 
+             {name: 'Калинград', population: 482443}, 
+             {name: 'Калуга', population: 336726},  
+            ]
+            cities.unshift({name:'Грозный', population:12506468})
+            cities.push({name:'Аргун', population:5351935})
+            
+            var filter = ["Москва", "Санкт-Петербург", "Новосибирск" , "Калинград", "Калуга"];
+             function filterItems(query) {  
+            return cities.filter(function (el) {
+             return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+            });
+            }
+            
+            console.log(filterItems("ap")); // ['Москва', 'Санкт-Петербург']
+            console.log(filterItems("an")); // ['banana', 'mango', 'orange']  
+
+
+
+           // console.log(cities[0])
+           // console.log(cities[6])
+           // console.log(cities)
+           //  
+           // cities.forEach(citi => {
+           //     console.log(`город: ${citi.name}
+           //     ${citi.population}` )                   
+           //  } )
+
+
+           
+        //   const words = [ 'Москва', 'Санкт-Петербург', 'Новосибирск', 'Калинград', 'Калуга'];
+
+        //const result = words.filter((word) => word.length > 6    );        //   console.log(result);
+        // // Expected output: Array ["москва", "Санкт-Петербург", "Новосибирск"]
+        
+
+        /**
+         * Элементы массива фильтруется на основе критериев поиска (query)
+         */
+        
+
+        let number = [1, -3, 5, 6, -7, 8, 9, -11] ;
+      
+
+
+             
+
+
+
+        
+
+ </script>
+      
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
